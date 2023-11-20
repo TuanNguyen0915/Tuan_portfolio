@@ -1,0 +1,17 @@
+.navbar-section {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-name {
+    font-size: 1.3re,;
+    font-weight: bold;
+}

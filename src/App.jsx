@@ -1,10 +1,14 @@
-
+// components
+import NavBar from './components/NavBar/NavBar'
+// css
 import './App.css'
 
 function App() {
-  return (
-    <h1>import font</h1>
-  )
+    return (
+        <main className='App'>
+            <NavBar />
+        </main>
+    )
 }
 
 export default App
