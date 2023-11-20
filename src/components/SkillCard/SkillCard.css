@@ -1,0 +1,98 @@
+.skill-card {
+    width: 30%;
+    perspective: 1000px;
+    position: relative;
+    min-height: 320px;
+    margin: 4rem 1rem;
+}
+
+.sc-front,
+.sc-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 12px;
+    gap: 1rem;
+    width: 12rem;
+    min-height: 15rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 1s;
+    border: 7px solid var(--orangeCard);
+    box-shadow: 0 .5rem 1rem gray;
+}
+
+.sc-front {
+    font-size: 1.5rem;
+    font-weight: 800;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.sc-front p {
+    margin-top: 2rem;
+    color: var(--orange);
+}
+
+.sc-front:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.front-IMG {
+    width: 25%;
+}
+
+.skill-card:hover .sc-front,
+.skill-card:active .sc-front {
+    transform: rotateY(-180deg);
+}
+
+.sc-btn {
+    font-size: 0.7rem;
+}
+
+.sc-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    transform: rotateY(180deg);
+}
+
+.sc-back {
+    color: var(--gray);
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-left: 10%;
+}
+
+.sc-back>* {
+    margin-left: 1rem;
+}
+
+.sc-back .items-span {
+    margin-left: 2rem;
+    font-weight: normal;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.backCard .backIcon {
+    /* color: #464CBE; */
+    color: whitesmoke;
+    transform: translateY(5px);
+}
+
+.skill-card:hover .sc-back,
+.skill-card:active .sc-back {
+    transform: rotateY(0deg);
+}

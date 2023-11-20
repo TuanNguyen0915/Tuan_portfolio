@@ -11,9 +11,10 @@
 }
 
 .App {
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 5.5rem;
     overflow: hidden;
     color: var(--black);
+    line-height: 1.4;
 }
 
 .btn {
@@ -32,4 +33,42 @@
     cursor: pointer;
     color: var(--orange);
     border: 1px solid var(--orange);
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 10vh;
+    margin: 1rem 1rem 0 0;
+}
+
+.a-down {
+    color: var(--orange);
+    animation: upDown 2s ease infinite;
+    transition: 1s;
+    font-size: 1.5rem;
+}
+
+
+.a-down:hover,
+.a-down:active {
+    color: black;
+    opacity: .8;
+    font-size: 2rem;
+}
+
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

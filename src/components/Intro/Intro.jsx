@@ -1,6 +1,10 @@
 //react packages
+import { HashLink } from "react-router-hash-link";
+//react icons
 import { FaGithub, FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { FaAngleDoubleDown } from "react-icons/fa";
+
 //css
 import './Intro.css'
 
@@ -31,6 +35,12 @@ const Intro = () => {
                     <FaLinkedinIn />
                     <FaFacebookF />
                 </div>
+                {/* Arrow */}
+                <div className='arrow'>
+                    <HashLink smooth to='#about'>
+                        <FaAngleDoubleDown className='a-down' />
+                    </HashLink>
+                </div>
             </div>
             {/* Right side */}
             <div className="i-right">
@@ -38,8 +48,8 @@ const Intro = () => {
                 <img src={Vector2} alt="" />
                 <img src={MyPic} />
                 {/* blur background  */}
-                <div className="bg-blur1"></div>
-                <div className="bg-blur2"></div> 
+                <div className="blur"></div>
+                <div className="blur2"></div>
             </div>
         </div>
     )

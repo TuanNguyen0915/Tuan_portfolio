@@ -116,7 +116,7 @@
     }
 }
 
-.bg-blur1, .bg-blur2 {
+.blur, .blur2 {
     width: 50rem;
     height: 14rem;
     /* background: #edd0ff; */
@@ -126,8 +126,9 @@
     top: -18%;
     left: 56%;
 }
-.bg-blur2 {
+.blur2 {
+    height: 10rem;
     background: var(--orange);
-    top: 18rem;
-    filter: blur(200px);
+    top: 10rem;
+    filter:  blur(200px);
 }
