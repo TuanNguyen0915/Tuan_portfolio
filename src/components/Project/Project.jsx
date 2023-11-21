@@ -25,7 +25,6 @@ const Project = () => {
     return (
         <div className="projects" id='projects'>
             <div className='p-decs'>
-                <span>Case Studies</span>
                 <span>Projects</span>
                 <span>
                     These projects demonstrate my expertise with practical examples of some of my work, including brief descriptions and links to code repositories and live demos. They showcase my ability to tackle intricate challenges, adapt to various technologies, and efficiently oversee projects.
@@ -45,28 +44,28 @@ const Project = () => {
                     ))}
                 </div>
                 <div className='p-un-active'>
-                    {myProjects.map(project => (
-                        !project.clicked ?
-                            <ProjectCard
-                                key={project.id}
-                                project={project}
-                                currId={currId}
-                                handleClick={handleClick}
-                            />
-                            : null
-                    ))}
+                    <div className='p-pc'>
+                        {myProjects.map(project => (
+                            !project.clicked ?
+                                <ProjectCard
+                                    key={project.id}
+                                    project={project}
+                                    currId={currId}
+                                    handleClick={handleClick}
+                                />
+                                : null
+                        ))}
+                    </div>
+                    {/* arrows */}
+                    <div className='arrow a-arrow'>
+                        <HashLink smooth to='#projects'>
+                            <FaAngleDoubleDown className='a-down' />
+                        </HashLink>
+                        <HashLink smooth to='#'>
+                            <FaAngleDoubleUp className='a-up />' />
+                        </HashLink>
+                    </div>
                 </div>
-            </div>
-
-
-            {/* arrows */}
-            <div className='arrow a-arrow'>
-                <HashLink smooth to='#projects'>
-                    <FaAngleDoubleDown className='a-down' />
-                </HashLink>
-                <HashLink smooth to='#'>
-                    <FaAngleDoubleUp className='a-up />' />
-                </HashLink>
             </div>
         </div>
     )

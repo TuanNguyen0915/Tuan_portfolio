@@ -1,23 +1,71 @@
 .p-card {
     padding: 1rem;
     box-shadow: 0 .5rem 1rem gray;
-    border: 4px solid var(--orangeCard);
     border-radius: 12px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 5px
+    margin: 5px;
 }
+
 
 .p-card-active {
     display: flex;
     flex-direction: column;
 }
 
+.p-card-active>:nth-child(1) {
+    color: var(--orange);
+    text-align: end;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.p-card-active>:nth-child(2) {
+    color: var(--black);
+    font-weight: 600;
+}
+.p-card-active>:nth-child(4) {
+    color: var(--gray);
+}
+
+
 .p-card-un-active {
     color: red;
 }
+
+.p-imgs-active {
+    width: 100%;
+    display: flex;
+}
+
+.p-imgs-active>* {
+    width: 33%;
+}
+
+.social {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+
+}
+
+.social a {
+    transition: .3s;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: var(--orange);
+}
+
+.social-icon {
+    transform: translateY(5px);
+}
+
 /* 
 
 .p-card:hover {

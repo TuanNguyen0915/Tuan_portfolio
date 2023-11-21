@@ -6,18 +6,33 @@ const ProjectCard = (props) => {
 
     return (
         <div
-        onClick={()=> {props.handleClick(props.project.id)}}
-        className='p-card'
-        >   {props.project.clicked?
+            onClick={() => { props.handleClick(props.project.id) }}
+            className='p-card'
+            style={{ border: `${props.project.clicked ? 'solid 6px var(--orangeCard)' : '1px solid var(--gray)'}` }}
+        >   {props.project.clicked ?
             <div className='p-card-active'>
                 <span>{props.project.name}</span>
                 <span>{props.project.decs}</span>
+                <div className='p-imgs-active'>
+                    <img src={props.project.imgLink} alt="" />
+                    <img src={props.project.imgLink} alt="" />
+                    <img src={props.project.imgLink} alt="" />
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, saepe iure soluta in iste eum aperiam repellendus quaerat eligendi id et laboriosam architecto harum ea deleniti tempore ipsa debitis!</p>
+                <div className='social'>
+                    <NavLink className='btn p-btn'>
+                        <FaPlayCircle className='social-icon' /> play demo
+                    </NavLink>
+                    <NavLink className='btn p-btn'>
+                        <FaGithub className='social-icon' /> github
+                    </NavLink>
+                </div>
             </div>
             :
             <div className='p-card-un-active'>
                 {props.project.name}
             </div>
-        }
+            }
         </div>
 
         // <div
@@ -35,7 +50,7 @@ const ProjectCard = (props) => {
         //                     <img src={props.project.imgLink} alt="" />
         //                 </div>
         //             </div>
-                    
+
         //             <div className='social'>
         //                 <NavLink className='btn p-btn'>
         //                     <FaPlayCircle className='social-icon' /> play demo
