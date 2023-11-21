@@ -44,10 +44,12 @@
     flex-direction: column;
     text-align: end;
 }
+
 .p-pc>* {
     filter: blur(.9px);
     margin-bottom: .5rem;
 }
+
 .p-pc>*:hover {
     cursor: pointer;
     animation: slider .75s .2s ease infinite;

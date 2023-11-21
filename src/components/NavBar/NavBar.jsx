@@ -1,10 +1,10 @@
 import './NavBar.css'
-
+import TuanSignature from '../../assets/images/Tuan_signature.png'
 const NavBar = () => {
     return (
         <div className="navbar-section">
             <div className="left-nav">
-                <div className="nav-name">Tuan Nguyen</div>
+                <img src={TuanSignature} alt='TuanNG' />
                 <span>toggle</span>
             </div>
             <div className="right-nav">
