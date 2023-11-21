@@ -13,6 +13,7 @@ const NavBar = () => {
                         <li>Home</li>
                         <li>About Me</li>
                         <li>Project</li>
+                        <li>Experience</li>
                     </ul>
                 </div>
                 <button className='btn navbar-btn'>

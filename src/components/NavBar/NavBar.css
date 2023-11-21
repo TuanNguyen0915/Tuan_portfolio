@@ -18,7 +18,7 @@
 
 .right-nav {
     display: flex;
-    flex: 1;
+    flex: 2;
     align-items: center;
     justify-content: center;
     font-weight: 500;
@@ -31,7 +31,8 @@
 .nav-list>ul {
     display: flex;
     gap: 2rem;
-    margin-right: 4rem;
+    justify-content: space-around;
+    justify-content: center;
     list-style: none;
 } 
 
