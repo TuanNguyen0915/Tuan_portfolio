@@ -61,7 +61,7 @@ const Project = () => {
                         <HashLink smooth to='#projects'>
                             <FaAngleDoubleDown className='a-down' />
                         </HashLink>
-                        <HashLink smooth to='#'>
+                        <HashLink smooth to='#about'>
                             <FaAngleDoubleUp className='a-up />' />
                         </HashLink>
                     </div>
