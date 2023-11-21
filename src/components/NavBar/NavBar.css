@@ -39,7 +39,6 @@
 .nav-list>ul>li:hover {
     cursor: pointer;
     color: var(--orange);
-    text-transform: uppercase;
 }
 
 .navbar-btn {

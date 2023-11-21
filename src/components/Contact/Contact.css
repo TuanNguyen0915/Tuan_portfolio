@@ -62,3 +62,11 @@
     left: 40rem;
     top: -10rem;
 }
+
+.form-mess {
+    margin: 2rem;
+    font-weight: normal;
+    font-size: 1rem;
+    color: var(--black);
+    text-align: justify;
+}

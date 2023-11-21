@@ -11,14 +11,14 @@ const Contact = () => {
         email: '',
         message: ''
     })
-    const [loading, setLoading] = useState(false)
+    const [done, setDone] = useState(false)
     const handleChange = e => {
         const { name, value } = e.target
         setForm({ ...form, [name]: value })
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        setLoading(true)
+        setDone(true)
         emailjs.send(
             'service_7tifjfg', //service id
             'template_448rt5s',// template id
@@ -30,8 +30,7 @@ const Contact = () => {
             'Lpi7KZhy99lKg8tG_' // my public key
         ).then(
             () => {
-                setLoading(false)
-                alert('Thank you. I will get back to you as soon as possible.')
+                setDone(false)
                 setForm({
                     name: '',
                     email: '',
@@ -39,7 +38,6 @@ const Contact = () => {
                 })
             },
             (error) => {
-                setLoading(false)
                 console.log(error);
                 alert('Something went wrong. Please try again.')
             }
@@ -83,9 +81,10 @@ const Contact = () => {
                         autoComplete="off"
                     />
                     <button className="btn c-btn">
-                        {loading ? 'Sending' : 'Send'}
+                        Send
                     </button>
                 </form>
+                <span className='form-mess'>{done && 'Thank you. I will get back to you as soon as possible.'}</span>
             </div>
         </div>
     )
