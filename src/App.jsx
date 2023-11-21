@@ -4,6 +4,7 @@ import Intro from './components/Intro/Intro'
 import About from './components/About/About'
 import Project from './components/Project/Project'
 import Experience from './components/Experience/Experience'
+import Contact from './components/Contact/Contact'
 // css
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
             <About />
             <Project />
             <Experience />
+            <Contact />
         </main>
     )
 }

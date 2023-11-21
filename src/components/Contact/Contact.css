@@ -1,0 +1,59 @@
+.contact {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.c-left,
+.c-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-decs {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-decs>:nth-child(1) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.c-decs>:nth-child(2) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.c-decs>:nth-child(3) {
+    font-weight: normal;
+    width: 90%;
+    font-size: 1rem;
+    color: var(--gray);
+    text-align: justify;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control>* {
+    border: 6px solid var(--orangeCard);
+    border-radius: 20px;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.c-btn {
+    width: 20%;
+}
+
+.c-blur {
+    background: #abf1ff94;
+    filter: blur(200px);
+    left: 20rem;
+}
