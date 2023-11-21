@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    align-content: center;
+    margin: -5.5rem;
+    position: relative;
+    margin-top: -7rem;
+}
+
+.footer>img {
+    width: 100%;
+}
+
+.f-content {
+    margin-top: 15rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    color: whitesmoke;
+}
+
+.f-content>:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.f-icons {
+    display: flex;
+    transform: scale(2);
+    gap: 2rem;
+}
+
+.f-icons>* {
+    transition: .5s;
+}
+
+.f-icons>*:hover {
+    color: black;
+}
+
+.f-icons>:nth-child(1):hover {
+    transform: translate(.4rem, -.2rem);
+}
+
+.f-icons>:nth-child(2):hover {
+    transform: translateY(-.4rem);
+}
+
+.f-icons>:nth-child(3):hover {
+    transform: translate(-.4rem, -.2rem);
+}
