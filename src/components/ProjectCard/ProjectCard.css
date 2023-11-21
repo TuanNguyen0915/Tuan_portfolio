@@ -1,16 +1,24 @@
 .p-card {
-    margin: 3rem .2rem;
-    padding: 0;
-    border-radius: 24px;
-    border: 6px solid var(--orangeCard);
-    min-height: 300px;
-    width: 30%;
-    transition: .1s;
+    padding: 1rem;
+    box-shadow: 0 .5rem 1rem gray;
+    border: 4px solid var(--orangeCard);
+    border-radius: 12px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    margin: 5px
 }
+
+.p-card-active {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-card-un-active {
+    color: red;
+}
+/* 
 
 .p-card:hover {
     cursor: pointer;
@@ -45,11 +53,12 @@
     opacity: .4;
 }
 
-.p-card-active {
-    flex-grow: 6;
+.p-active {
+    flex-grow: 10;
     opacity: 1;
     border: 6px solid var(--orangeCard);
     box-shadow: 0 .5rem 1rem gray;
+    margin-top: 1rem;
     border-radius: 24px;
 }
 
@@ -101,4 +110,5 @@
 
 .social-icon {
     transform: translateY(5px);
-}
+} */
+

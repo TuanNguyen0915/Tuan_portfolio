@@ -27,20 +27,20 @@ const myProjects = [
     {
         id: 2,
         name: 'DragonBall',
-        decs: 'This is testing',
+        decs: 'This is DragonBall ',
         imgLink: './src/assets/images/smoke.png',
         clicked: false
     },
     {
         id: 3,
         name: 'Game Blog',
-        decs: 'This is testing',
+        decs: 'This is GameBlog',
         imgLink: './src/assets/images/smoke.png',
         clicked: false
     },
     {
         id: 4,
-        name: 'Game Blog',
+        name: 'Testing',
         decs: 'This is testing',
         imgLink: './src/assets/images/smoke.png',
         clicked: false

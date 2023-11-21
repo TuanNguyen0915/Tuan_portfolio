@@ -31,17 +31,34 @@ const Project = () => {
                     These projects demonstrate my expertise with practical examples of some of my work, including brief descriptions and links to code repositories and live demos. They showcase my ability to tackle intricate challenges, adapt to various technologies, and efficiently oversee projects.
                 </span>
             </div>
-
             <div className="p-list">
-                {myProjects.map(project => (
-                    <ProjectCard
-                        key={project.id}
-                        project={project}
-                        currId={currId}
-                        handleClick={handleClick}
-                    />
-                ))}
+                <div className='p-active'>
+                    {myProjects.map(project => (
+                        project.clicked ?
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                                currId={currId}
+                                handleClick={handleClick}
+                            />
+                            : null
+                    ))}
+                </div>
+                <div className='p-un-active'>
+                    {myProjects.map(project => (
+                        !project.clicked ?
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                                currId={currId}
+                                handleClick={handleClick}
+                            />
+                            : null
+                    ))}
+                </div>
             </div>
+
+
             {/* arrows */}
             <div className='arrow a-arrow'>
                 <HashLink smooth to='#projects'>
