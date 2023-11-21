@@ -1,11 +1,13 @@
 .about {
     display: flex;
     height: 90vh;
-    margin: 8rem 0;
+    margin: 6rem 0;
 }
+
 .a-left {
-    flex: 1;
+    width: 60%;
 }
+
 .a-intro {
     display: flex;
     flex-direction: column;
@@ -31,20 +33,53 @@
     text-align: justify;
 }
 
+.a-cv {
+    display: flex;
+    justify-content: space-between;
+}
+
 .a-btn {
-    margin-top: 4rem;
+    height: 3rem;
+    margin-top: 3rem;
     font-size: 14px;
 }
 
-.a-blur {
+.l-blur {
+    width: 100%;
     position: relative;
     background: #abf1ff94;
-    top: -15rem;
-    left: 0; 
-    z-index: -5;
+    left: -10rem;
+    top: -10rem;
 }
 
 .a-right {
-    flex: 1;
+    width: 50%;
 }
 
+.f-card {
+    transform: translate(2rem, -3rem);
+}
+
+.r-blur {
+    position: absolute;
+    background: var(--purple);
+    transform: translate(-4rem, 4rem);
+}
+
+.s-card {
+    transform: translate(-12rem, -3rem);
+}
+
+.t-card {
+    transform: translate(12rem, -25rem);
+    margin-bottom: 0;
+}
+
+.a-arrow {
+    margin-top: 11rem;
+    justify-content: flex-end;
+    align-items: end;
+}
+.a-arrow .a-down {
+    padding: 0 2rem;
+}

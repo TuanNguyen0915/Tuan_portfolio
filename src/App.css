@@ -50,6 +50,12 @@
     font-size: 1.5rem;
 }
 
+.a-up {
+    color: var(--orange);
+    animation: downUp 2s ease infinite;
+    transition: 1s;
+    font-size: 1.5rem;
+}
 
 .a-down:hover,
 .a-down:active {
@@ -58,6 +64,12 @@
     font-size: 2rem;
 }
 
+.a-up:hover,
+.a-up:active {
+    color: black;
+    opacity: .8;
+    font-size: 2rem;
+}
 
 @keyframes upDown {
     0% {
@@ -70,5 +82,18 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+@keyframes downUp {
+    0% {
+        transform: translateY(1rem);
+    }
+    
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(1rem);
     }
 }

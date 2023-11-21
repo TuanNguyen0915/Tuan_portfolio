@@ -9,9 +9,9 @@ const SkillCard = (props) => {
             >
                 <img className="front-IMG" src={props.skill.imgLink} alt="img" />
                 <p>{props.skill.title}</p>
-                <button className="btn sc-btn">
-                    Learn More...
-                </button>
+                <div className="btn sc-btn">
+                    Show More
+                </div>
             </div>
             <div className='sc-back'>
                 {props.skill.items.map(item => (
@@ -22,6 +22,6 @@ const SkillCard = (props) => {
             </div>
         </div>
     )
-}
+} 
 
 export default SkillCard
