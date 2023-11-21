@@ -58,7 +58,7 @@ const Project = () => {
                     </div>
                     {/* arrows */}
                     <div className='arrow a-arrow'>
-                        <HashLink smooth to='#projects'>
+                        <HashLink smooth to='#exp'>
                             <FaAngleDoubleDown className='a-down' />
                         </HashLink>
                         <HashLink smooth to='#about'>

@@ -116,21 +116,25 @@
     }
 }
 
-.blur, .blur2 {
-    width: 50rem;
+.blur,
+.blur2 {
+    position: absolute;
+    width: 22rem;
     height: 14rem;
-    /* background: #edd0ff; */
-    background: #c1f5ff;
-    filter: blur(100px);
-    z-index: -5;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
     top: -18%;
     left: 56%;
+    filter: blur(72px);
 }
+
 .blur2 {
     height: 10rem;
     background: var(--orange);
-    top: 10rem;
-    filter:  blur(200px);
+    top: 15rem;
+    filter: blur(100px);
 }
 
 .i-arrow {

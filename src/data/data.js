@@ -61,4 +61,19 @@ const myProjects = [
     }
 ]
 
-export { skillsSet, myProjects }
+const experiences = [
+    {
+        company: 'GA',
+        exp: "Jezebel's critics accused it of crafting deliberately inflammatory headlines to generate rage clicks and of fostering bedlam in the comments.—Kathleen Walsh, Glamour, 10 Nov. 2023"
+    },
+    {
+        company: 'Vietnamese Restaurant',
+        exp: "Jezebel's critics accused it of crafting deliberately inflammatory headlines to generate rage clicks and of fostering bedlam in the comments.—Kathleen Walsh, Glamour, 10 Nov. 2023"
+    },
+    {
+        company: 'ACB Bank',
+        exp: "Jezebel's critics accused it of crafting deliberately inflammatory headlines to generate rage clicks and of fostering bedlam in the comments.—Kathleen Walsh, Glamour, 10 Nov. 2023"
+    }
+]
+
+export { skillsSet, myProjects, experiences }

@@ -63,7 +63,8 @@
 .r-blur {
     position: absolute;
     background: var(--purple);
-    transform: translate(-4rem, 4rem);
+    top: 10rem;
+    left: -5rem;
 }
 
 .s-card {

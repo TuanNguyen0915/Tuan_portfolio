@@ -11,13 +11,13 @@
 }
 
 .p-decs>:nth-child(1) {
-    color: var(--orange);
+    color: var(--orange); 
     font-weight: bold;
     font-size: 3rem;
 }
 
 .p-decs>:nth-child(2) {
-    width: 80%;
+    width: 60%;
     font-size: 1rem;
     font-weight: normal;
     color: var(--gray);
