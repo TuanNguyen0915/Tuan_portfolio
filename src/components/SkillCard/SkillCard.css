@@ -21,7 +21,7 @@
     transform-style: preserve-3d;
     transition: ease-in-out 1s;
     border: 7px solid var(--orangeCard);
-    box-shadow: 0 .5rem 1rem gray;
+    box-shadow: 0 .5rem 1rem var(--boxShadow);
 }
 
 .sc-front {

@@ -7,37 +7,35 @@ const ProjectCard = (props) => {
     return (
         <div
             onClick={() => { props.handleClick(props.project.id) }}
-            className={`${props.currId === props.project.id ? 'project-card active' : 'project-card'}`}
+            className={`${props.currId === props.project.id ? 'p-card-active' : 'p-card'}`}
         >
-            {props.active === props.project.id
+            {props.currId === props.project.id
                 ?
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <div className='project-info-active'>
-                        <div className='project-img-active'>
+                    <div className='p-info-active'>
+                        <h1>{props.project.name}</h1>
+                        <div className='p-imgs-active'>
                             <img src={props.project.imgLink} alt="" />
-                        </div>
-                        <div className='project-content'>
-                            <h1>{props.project.name}</h1>
-                            <p>{props.project.decs}</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eos ullam, dignissimos molestias asperiores, voluptatibus</p>
+                            <img src={props.project.imgLink} alt="" />
+                            <img src={props.project.imgLink} alt="" />
                         </div>
                     </div>
                     <div className='social'>
-                        <NavLink>
+                        <NavLink className='btn p-btn'>
                             <FaPlayCircle className='social-icon' /> play demo
                         </NavLink>
-                        <NavLink>
+                        <NavLink className='btn p-btn'>
                             <FaGithub className='social-icon' /> github
                         </NavLink>
                     </div>
                 </div>
 
                 :
-                <div className='project-info'>
-                    <div className='project-img'>
+                <div className='p-info'>
+                    <div className='p-img'>
                         <img src={props.project.imgLink} alt="" />
                     </div>
-                    <div className='project-content'>
+                    <div className='p-content'>
                         <h1>{props.project.name}</h1>
                     </div>
                 </div>

@@ -75,10 +75,8 @@
     margin-bottom: 0;
 }
 
-.a-arrow {
-    margin-top: 11rem;
-    justify-content: flex-end;
-    align-items: end;
+.arrow.a-arrow {
+    margin-top: 10rem;
 }
 .a-arrow .a-down {
     padding: 0 2rem;

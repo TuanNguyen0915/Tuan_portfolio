@@ -21,30 +21,30 @@ const myProjects = [
         id: 1,
         name: 'Simon',
         decs: 'This is Simon game',
-        imgLink: './src/assets/images/smoke.png'
-
+        imgLink: './src/assets/images/smoke.png',
+        clicked: true
     },
     {
         id: 2,
         name: 'DragonBall',
         decs: 'This is testing',
-        imgLink: './src/assets/images/smoke.png'
-
+        imgLink: './src/assets/images/smoke.png',
+        clicked: false
     },
     {
         id: 3,
         name: 'Game Blog',
         decs: 'This is testing',
-        imgLink: './src/assets/images/smoke.png'
-
-
+        imgLink: './src/assets/images/smoke.png',
+        clicked: false
     },
     {
         id: 4,
         name: 'Game Blog',
         decs: 'This is testing',
-        imgLink: './src/assets/images/smoke.png'
+        imgLink: './src/assets/images/smoke.png',
+        clicked: false
     }
 ]
 
-export {skillsSet, myProjects}
+export { skillsSet, myProjects }

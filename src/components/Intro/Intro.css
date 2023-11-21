@@ -132,3 +132,7 @@
     top: 10rem;
     filter:  blur(200px);
 }
+
+.i-arrow {
+    justify-content: flex-end;
+}

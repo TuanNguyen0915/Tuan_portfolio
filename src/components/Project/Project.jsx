@@ -13,7 +13,13 @@ import './Project.css'
 const Project = () => {
     const [currId, setCurrId] = useState(1)
 
+    // const handleClick = idx => {
+    //     setCurrId(idx)
+    // }
     const handleClick = idx => {
+        myProjects.map(project => {
+            project.clicked = project.id === idx ? true : false
+        })
         setCurrId(idx)
     }
     return (
@@ -25,12 +31,13 @@ const Project = () => {
                     These projects demonstrate my expertise with practical examples of some of my work, including brief descriptions and links to code repositories and live demos. They showcase my ability to tackle intricate challenges, adapt to various technologies, and efficiently oversee projects.
                 </span>
             </div>
-            <div className='p-list'>
-                {myProjects.map(item => (
+
+            <div className="p-list">
+                {myProjects.map(project => (
                     <ProjectCard
-                        key={item.name}
-                        project={item}
-                        currId = {currId}
+                        key={project.id}
+                        project={project}
+                        currId={currId}
                         handleClick={handleClick}
                     />
                 ))}

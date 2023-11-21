@@ -50,6 +50,7 @@ const About = () => {
                     <SkillCard skill={skillsSet[1]} />
                 </div>
             </div>
+
         </div>
     )
 }

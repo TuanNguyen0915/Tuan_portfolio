@@ -37,8 +37,6 @@
 
 .arrow {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     min-height: 10vh;
     margin: 1rem 1rem 0 0;
 }

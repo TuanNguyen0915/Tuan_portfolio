@@ -36,7 +36,7 @@ const Intro = () => {
                     <FaFacebookF />
                 </div>
                 {/* Arrow */}
-                <div className='arrow'>
+                <div className='arrow i-arrow'>
                     <HashLink smooth to='#about'>
                         <FaAngleDoubleDown className='a-down' />
                     </HashLink>
