@@ -1,5 +1,5 @@
 import './Footer.css'
-import footerIMG from "../../assets/images/wave.png"
+import footerIMG from "/public/assets/images/wave.png"
 import { FaGithubAlt, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {

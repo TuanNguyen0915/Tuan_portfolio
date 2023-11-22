@@ -9,9 +9,9 @@ import { motion } from "framer-motion"
 import './Intro.css'
 
 //images
-import Vector1 from '../../assets/images/Vector1.png'
-import Vector2 from '../../assets/images/Vector2.png'
-import MyPic from '../../assets/images/myPic_tran.png'
+import Vector1 from '/public/assets/images/Vector1.png'
+import Vector2 from '/public/assets/images/Vector2.png'
+import MyPic from '/public/assets/images/myPic_tran.png'
 
 const Intro = (props) => {
     const transition = { duration: 2, type: 'spring' }
