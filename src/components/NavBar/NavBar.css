@@ -35,8 +35,10 @@
     justify-content: center;
     list-style: none;
 } 
-
-.nav-list>ul>li:hover {
+.nav-list>ul>li>a{
+    color: black;
+}
+.nav-list>ul>li>a:hover {
     cursor: pointer;
     color: var(--orange);
 }

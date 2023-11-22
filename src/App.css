@@ -9,7 +9,9 @@
     --orangeCard: rgba(252, 166, 31, 0.45);
     --smBoxShadow: -79px 51px 60px rgba(0.0, 0, 0.08);
 }
-
+a {
+    text-decoration: none;
+}
 .App {
     padding: 0.5rem 5.5rem;
     overflow: hidden;
