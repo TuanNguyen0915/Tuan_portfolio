@@ -5,7 +5,6 @@ import { FaGithub, FaFacebookF } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa6"
 import { FaAngleDoubleDown } from "react-icons/fa"
 import { motion } from "framer-motion"
-import { Link } from "react-scroll"
 //css
 import './Intro.css'
 
@@ -33,10 +32,11 @@ const Intro = (props) => {
                         I&#39;m a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions.
                     </span>
                 </div>
-                <button
-                    className='btn i-btn'>
-                    Hire me
-                </button>
+                <HashLink smooth to="#contact">
+                    <button className='btn i-btn'>
+                        Hire me
+                    </button>
+                </HashLink>
                 <div className="i-icons">
                     <FaGithub style={{ color: props.lightMode ? '' : 'var(--orange)' }} />
                     <FaLinkedinIn style={{ color: props.lightMode ? '' : 'var(--orange)' }} />

@@ -141,3 +141,31 @@
     justify-content: flex-end;
     padding: 1rem;
 }
+
+@media screen and (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro .i-arrow {
+        display: none;
+    }
+    .i-left .i-name>:nth-child(3) {
+        text-align: justify;
+    }
+    .i-right {
+        margin-top: 4rem;
+        transform: scale(.5);
+        left: -3rem;       
+        
+    }
+
+    .i-right .blur {
+        display: none;
+    }
+
+    .i-right>:nth-child(3) {
+        top: -20rem;
+        transform: scale(.5) translateX(-15rem);
+    }
+}

@@ -9,8 +9,8 @@ const NavBar = (props) => {
         <div className="navbar-section" id='navbar'>
             <div className="left-nav">
                 {props.lightMode ?
-                    <img src={TuanSignature} alt='TuanNG' /> :
-                    <img src={TuanSignatureW} alt='TuanNG' />
+                    <img className='nav-sign' src={TuanSignature} alt='TuanNG' /> :
+                    <img className='nav-sign' src={TuanSignatureW} alt='TuanNG' />
                 }
                 <Toggle handleOnClick={props.handleOnClick} />
             </div>

@@ -1,6 +1,6 @@
 .skill-card {
     width: 30%;
-    perspective: 1000px;
+    /* perspective: 1000px; */
     /* position: relative; */
     min-height: 320px;
     margin: 4rem 1rem;
@@ -87,7 +87,6 @@
 }
 
 .backCard .backIcon {
-    /* color: #464CBE; */
     color: whitesmoke;
     transform: translateY(5px);
 }
