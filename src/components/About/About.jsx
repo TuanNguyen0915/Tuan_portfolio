@@ -15,6 +15,8 @@ import './About.css'
 // data
 import { skillsSet } from '../../data/data'
 
+
+
 const About = (props) => {
     const transition = { duration: 1, type: 'spring' }
     return (
