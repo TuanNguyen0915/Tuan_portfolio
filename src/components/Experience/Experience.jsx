@@ -24,10 +24,13 @@ const Experience = (props) => {
                 pagination={{ clickable: true }}
             >
                 {experiences.map((exp, idx) => (
-                    <SwiperSlide key={idx}>
+                    <SwiperSlide key={idx}
+                    >
                         <div className="exp-box">
                             <span>{exp.company}</span>
-                            <span>{exp.exp}</span>
+                            <span
+                                style={{ color: props.lightMode ? '' : '#e9e7c6' }}
+                            >{exp.exp}</span>
                         </div>
                     </SwiperSlide>
                 ))}
