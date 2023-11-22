@@ -19,11 +19,11 @@ const Intro = (props) => {
             {/* Left side */}
             <div className="i-left">
                 <div className="i-name">
-                    <span style={{color: props.lightMode?'':'whitesmoke'}}>
+                    <span style={{ color: props.lightMode ? '' : 'whitesmoke' }}>
                         Hi! I Am
                     </span>
                     <span>Tuan Nguyen</span>
-                    <span style={{color: props.lightMode?'':'#e9e7c6'}}>
+                    <span style={{ color: props.lightMode ? '' : '#e9e7c6' }}>
                         I&#39;m a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions.
                     </span>
                 </div>
@@ -31,9 +31,9 @@ const Intro = (props) => {
                     Hire me
                 </button>
                 <div className="i-icons">
-                    <FaGithub style={{color: props.lightMode?'':'whitesmoke'}}/>
-                    <FaLinkedinIn style={{color: props.lightMode?'':'whitesmoke'}}/>
-                    <FaFacebookF style={{color: props.lightMode?'':'whitesmoke'}}/>
+                    <FaGithub style={{ color: props.lightMode ? '' : 'var(--orange)' }} />
+                    <FaLinkedinIn style={{ color: props.lightMode ? '' : 'var(--orange)' }} />
+                    <FaFacebookF style={{ color: props.lightMode ? '' : 'var(--orange)' }} />
                 </div>
                 {/* Arrow */}
                 <div className='arrow i-arrow'>

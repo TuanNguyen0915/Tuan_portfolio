@@ -6,12 +6,14 @@ import { Pagination } from 'swiper'
 import './Experience.css'
 import 'swiper/css'
 import 'swiper/css/pagination'
-const Experience = () => {
+const Experience = (props) => {
     return (
         <div className="experience" id='exp'>
             <div className="e-heading">
                 <span>Experiences</span>
-                <span>Throughout my career, I have honed my ability to work collaboratively with teams and solve work problems in an efficient and effective manner. This has enabled me to consistently meet customer needs and exceed their expectations, bringing joy to their experience.</span>
+                <span
+                    style={{ color: props.lightMode ? '' : '#e9e7c6' }}
+                >Throughout my career, I have honed my ability to work collaboratively with teams and solve work problems in an efficient and effective manner. This has enabled me to consistently meet customer needs and exceed their expectations, bringing joy to their experience.</span>
                 {/* <div className="blur e-blur1"></div> */}
                 <div className="blur e-blur2"></div>
             </div>
