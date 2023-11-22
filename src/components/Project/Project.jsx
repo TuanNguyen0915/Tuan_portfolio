@@ -10,7 +10,8 @@ import { myProjects } from '../../data/data'
 
 //css
 import './Project.css'
-const Project = () => {
+import { prop } from 'dom7';
+const Project = (props) => {
     const [currId, setCurrId] = useState(1)
 
     // const handleClick = idx => {
@@ -26,7 +27,7 @@ const Project = () => {
         <div className="projects" id='projects'>
             <div className='p-decs'>
                 <span>Projects</span>
-                <span>
+                <span style={{ color: props.lightMode ? '' : '#e9e7c6' }}>
                     These projects demonstrate my expertise with practical examples of some of my work, including brief descriptions and links to code repositories and live demos. They showcase my ability to tackle intricate challenges, adapt to various technologies, and efficiently oversee projects.
                 </span>
             </div>
@@ -34,7 +35,7 @@ const Project = () => {
                 <div className='p-active'>
                     {myProjects.map(project => (
                         project.clicked ?
-                            <ProjectCard
+                            <ProjectCard lightMode={props.lightMode}
                                 key={project.id}
                                 project={project}
                                 currId={currId}
@@ -47,7 +48,7 @@ const Project = () => {
                     <div className='p-pc'>
                         {myProjects.map(project => (
                             !project.clicked ?
-                                <ProjectCard
+                                <ProjectCard lightMode={props.lightMode}
                                     key={project.id}
                                     project={project}
                                     currId={currId}

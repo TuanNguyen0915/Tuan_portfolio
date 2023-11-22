@@ -12,13 +12,17 @@ const ProjectCard = (props) => {
         >   {props.project.clicked ?
             <div className='p-card-active'>
                 <span>{props.project.name}</span>
-                <span>{props.project.decs}</span>
+                <span
+                    style={{ color: props.lightMode ? '' : '#e9e7c6' }}
+                >{props.project.decs}</span>
                 <div className='p-imgs-active'>
                     <img src={props.project.img1} alt="" />
                     <img src={props.project.img2} alt="" />
                     <img src={props.project.img3} alt="" />
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, saepe iure soluta in iste eum aperiam repellendus quaerat eligendi id et laboriosam architecto harum ea deleniti tempore ipsa debitis!</p>
+                <p
+                    style={{ color: props.lightMode ? '' : '#e9e7c6' }}
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, saepe iure soluta in iste eum aperiam repellendus quaerat eligendi id et laboriosam architecto harum ea deleniti tempore ipsa debitis!</p>
                 <div className='social'>
                     <NavLink className='btn p-btn' to={props.project.play} target='_blank'>
                         <FaPlayCircle className='social-icon' /> play demo
@@ -29,7 +33,8 @@ const ProjectCard = (props) => {
                 </div>
             </div>
             :
-            <div className='p-card-un-active'>
+            <div className='p-card-un-active'
+                style={{ color: props.lightMode ? '' : '#e9e7c6' }}>
                 {props.project.name}
             </div>
             }

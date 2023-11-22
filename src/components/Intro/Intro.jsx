@@ -23,7 +23,7 @@ const Intro = (props) => {
                         Hi! I Am
                     </span>
                     <span>Tuan Nguyen</span>
-                    <span style={{color: props.lightMode?'':'whitesmoke'}}>
+                    <span style={{color: props.lightMode?'':'#e9e7c6'}}>
                         I&#39;m a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions.
                     </span>
                 </div>
