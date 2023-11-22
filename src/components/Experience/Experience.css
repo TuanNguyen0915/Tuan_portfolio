@@ -68,7 +68,6 @@
 
 .experience .swiper-slide {
     display: flex;
-    /* align-items: center;  */
     justify-content: center;
 }
 
@@ -79,4 +78,12 @@
 
 .experience .swiper-pagination-bullet-active {
     background: var(--yellow);
+}
+
+
+@media screen and (max-width:480px) {
+    .e-heading>:nth-child(2) {
+        width: 100%;
+        font-size: 1rem;
+    }
 }

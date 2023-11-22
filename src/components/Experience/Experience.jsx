@@ -1,11 +1,14 @@
 import { experiences } from '../../data/data.js'
 // packages
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper'
+import { Pagination, Autoplay } from 'swiper'
 //css
 import './Experience.css'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import 'swiper/css/autoplay'
+
 const Experience = (props) => {
     return (
         <div className="experience" id='exp'>
@@ -19,9 +22,13 @@ const Experience = (props) => {
             </div>
             {/* slider */}
             <Swiper
-                modules={[Pagination]}
+                modules={[Pagination, Autoplay]}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
+                autoplay= {
+                    { delay: 2000 }
+                }
+                data-swiper-autoplay="2000"
             >
                 {experiences.map((exp, idx) => (
                     <SwiperSlide key={idx}
