@@ -23,11 +23,11 @@ function App() {
             }}
         >
             <NavBar handleOnClick={handleOnClick} lightMode={lightMode}/>
-            <Intro />
-            <About />
-            <Project />
-            <Experience />
-            <Contact />
+            <Intro lightMode={lightMode}/>
+            <About lightMode={lightMode}/>
+            <Project lightMode={lightMode}/>
+            <Experience lightMode={lightMode}/>
+            <Contact lightMode={lightMode}/>
             <Footer />
         </main>
     )

@@ -13,17 +13,17 @@ import Vector1 from '../../assets/images/Vector1.png'
 import Vector2 from '../../assets/images/Vector2.png'
 import MyPic from '../../assets/images/myPic_tran.png'
 
-const Intro = () => {
+const Intro = (props) => {
     return (
         <div className="intro">
             {/* Left side */}
             <div className="i-left">
                 <div className="i-name">
-                    <span>
+                    <span style={{color: props.lightMode?'':'whitesmoke'}}>
                         Hi! I Am
                     </span>
                     <span>Tuan Nguyen</span>
-                    <span>
+                    <span style={{color: props.lightMode?'':'whitesmoke'}}>
                         I&#39;m a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions.
                     </span>
                 </div>
@@ -31,9 +31,9 @@ const Intro = () => {
                     Hire me
                 </button>
                 <div className="i-icons">
-                    <FaGithub />
-                    <FaLinkedinIn />
-                    <FaFacebookF />
+                    <FaGithub style={{color: props.lightMode?'':'whitesmoke'}}/>
+                    <FaLinkedinIn style={{color: props.lightMode?'':'whitesmoke'}}/>
+                    <FaFacebookF style={{color: props.lightMode?'':'whitesmoke'}}/>
                 </div>
                 {/* Arrow */}
                 <div className='arrow i-arrow'>
