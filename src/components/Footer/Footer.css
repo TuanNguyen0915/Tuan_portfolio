@@ -55,6 +55,9 @@
 
 @media screen and (max-width: 480px) {
     .f-content {
-        margin-top: 5rem;
+        margin-top: 1rem;
+    }
+    .footer>img {
+        transform: translateY(-4rem);
     }
 }

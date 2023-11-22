@@ -14,15 +14,24 @@ const ProjectCard = (props) => {
                 <span>{props.project.name}</span>
                 <span
                     style={{ color: props.lightMode ? '' : '#e9e7c6' }}
-                >{props.project.decs}</span>
+                >
+                    {/* {props.project.decs.join("     ")} */}
+                    {props.project.langs.map(item => (
+                        <span key={item}>
+                            {item}
+                        </span>
+                    ))}
+                </span>
                 <div className='p-imgs-active'>
                     <img src={props.project.img1} alt="" />
                     <img src={props.project.img2} alt="" />
                     <img src={props.project.img3} alt="" />
                 </div>
-                <p
+                <span
                     style={{ color: props.lightMode ? '' : '#e9e7c6' }}
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ex, saepe iure soluta in iste eum aperiam repellendus quaerat eligendi id et laboriosam architecto harum ea deleniti tempore ipsa debitis!</p>
+                >
+                    {props.project.decs}
+                </span>
                 <div className='social'>
                     <NavLink className='btn p-btn' to={props.project.play} target='_blank'>
                         <FaPlayCircle className='social-icon' /> play demo
