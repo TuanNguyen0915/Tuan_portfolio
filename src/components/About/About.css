@@ -63,6 +63,7 @@
 .r-blur {
     position: absolute;
     background: var(--purple);
+    filter: blur(160px);
     top: 10rem;
     left: -5rem;
 }

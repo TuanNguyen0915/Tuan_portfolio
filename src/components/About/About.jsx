@@ -13,15 +13,17 @@ import './About.css'
 // data
 import { skillsSet } from '../../data/data'
 
-const About = () => {
+const About = (props) => {
     return (
         <div className="about" id='about'>
             {/* left side */}
             <div className="a-left">
                 <div className="a-intro">
-                    <span>Introduction</span>
-                    <span>Software Engineer</span>
-                    <span>I&#39;m a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions. Carefulness and responsibility are two skills I learned while working in my previous career, which helped me approach SWE more easily, and work more efficiently. I am interested in technology and techniques in the full-stack development field to keep my passion for it.</span>
+                    <span >Introduction</span>
+                    <span style={{ color: props.lightMode ? '' : 'whitesmoke' }}>Software Engineer</span>
+                    <span
+                        style={{ color: props.lightMode ? '' : '#f6f4ab' }}>
+                        I&#39;m a full-stack software engineer who enjoys building apps for accessible and intuitive design to give the customer the best and simplest way solutions. Carefulness and responsibility are two skills I learned while working in my previous career, which helped me approach SWE more easily, and work more efficiently. I am interested in technology and techniques in the full-stack development field to keep my passion for it.</span>
                 </div>
                 <a href={myResume} download>
                     <button className='btn a-btn'>Download CV</button>
@@ -40,7 +42,7 @@ const About = () => {
             {/* right side */}
             <div className="a-right">
                 <div className='f-card'>
-                    <SkillCard skill={skillsSet[0]} />
+                    <SkillCard skill={skillsSet[0]} lightMode={props.lightMode} />
                     <div className="blur r-blur"></div>
                 </div>
                 <div className="s-card">

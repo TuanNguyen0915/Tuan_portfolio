@@ -16,12 +16,18 @@ const SkillCard = (props) => {
             <div className='sc-back'>
                 {props.skill.items.map(item => (
                     <span key={item}>
-                        <FaAnglesRight class='backIcon' /> <span className='items-span'>{item}</span>
+                        <FaAnglesRight
+                            class='backIcon'
+                            style={{ color: props.lightMode ? '' : 'whitesmoke' }}
+                        />
+                        <span className='items-span'
+                            style={{ color: props.lightMode ? '' : 'whitesmoke' }}>
+                            {item}</span>
                     </span>
                 ))}
             </div>
         </div>
     )
-} 
+}
 
 export default SkillCard
