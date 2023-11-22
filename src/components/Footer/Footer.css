@@ -52,3 +52,9 @@
 .f-icons>:nth-child(3):hover {
     transform: translate(-.4rem, -.2rem);
 }
+
+@media screen and (max-width: 480px) {
+    .f-content {
+        margin-top: 5rem;
+    }
+}
