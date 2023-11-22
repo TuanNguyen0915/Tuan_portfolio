@@ -49,7 +49,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem;
-    width: 30rem;
+    width: 60%;
     height: 12rem;
     background: rgba(255, 255, 255, .26);
     border: 6px solid var(--blueCard);
@@ -57,13 +57,25 @@
     border-radius: 20px;
 }
 
+.exp-box img {
+    border-radius: 100%;
+    width: 15%;
+}
+
 .exp-box>:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--orange);
+}
+
+.exp-box>:nth-child(3) {
     color: var(--gray);
+    text-align: justify;
 }
 
 .experience .swiper {
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
 .experience .swiper-slide {
@@ -75,7 +87,9 @@
 .experience .swiper-pagination-bullet {
     transform: translateY(-10rem) scale(1.5);
 }
-
+.experience .swiper-pagination-bullet {
+    background: salmon;
+}
 .experience .swiper-pagination-bullet-active {
     background: var(--yellow);
 }
@@ -85,5 +99,17 @@
     .e-heading>:nth-child(2) {
         width: 100%;
         font-size: 1rem;
+    }
+    .exp-box {
+        height: 17rem;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .exp-box>:nth-child(3) {
+        width: 100%;
+    }
+    .exp-box>*{
+        transform: scale(0.8);
     }
 }

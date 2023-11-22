@@ -67,16 +67,27 @@ const myProjects = [
 
 const experiences = [
     {
-        company: 'GA',
-        exp: "Jezebel's critics accused it of crafting deliberately inflammatory headlines to generate rage clicks and of fostering bedlam in the comments.—Kathleen Walsh, Glamour, 10 Nov. 2023"
+        company: 'General Assembly',
+        exp: "Full-stack software engineering 420+ hour program focused on product development fundamentals, object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies. ",
+        img: './src/assets/images/jobs/ga.png',
+        exp2: ''
+    },
+    {
+        company: 'Target',
+        exp: "Dedicate over 65% of daily tasks to inspecting in-store merchandise, ensuring optimal presentation and customer satisfaction.Efficiently organize back-room inventory for streamlined accessibility, assisting team members in efficient product retrieval.",
+        img: './src/assets/images/jobs/target.png',
     },
     {
         company: 'Vietnamese Restaurant',
-        exp: "Jezebel's critics accused it of crafting deliberately inflammatory headlines to generate rage clicks and of fostering bedlam in the comments.—Kathleen Walsh, Glamour, 10 Nov. 2023"
+        exp: "The duties include taking orders, serving drinks and food, answering questions about menu options, processing payments, illustrating the food menu and drink list, communicating with customers to make them feel comfortable, and quickly solving their questions.",
+        img: './src/assets/images/jobs/pho.jpeg',
+
     },
     {
         company: 'ACB Bank',
-        exp: "Jezebel's critics accused it of crafting deliberately inflammatory headlines to generate rage clicks and of fostering bedlam in the comments.—Kathleen Walsh, Glamour, 10 Nov. 2023"
+        exp: "As a bank teller, I would be responsible for assisting customers with various transactions and providing customer service. My duties would include cashing checks, canceling checks, processing wire transfers, handling loan payments, and assisting with loan applications.",
+        img: './src/assets/images/jobs/acb.svg',
+
     }
 ]
 

@@ -34,6 +34,7 @@ const Experience = (props) => {
                     <SwiperSlide key={idx}
                     >
                         <div className="exp-box">
+                            <img src={exp.img} alt="" />
                             <span>{exp.company}</span>
                             <span
                                 style={{ color: props.lightMode ? '' : '#e9e7c6' }}
