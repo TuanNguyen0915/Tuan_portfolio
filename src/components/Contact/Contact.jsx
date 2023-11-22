@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser'
 
 import './Contact.css'
 
-const Contact = () => {
+const Contact = (props) => {
     const formRef = useRef()
     const [form, setForm] = useState({
         name: '',
@@ -49,8 +49,12 @@ const Contact = () => {
             <div className="c-left">
                 <div className="c-decs">
                     <span>Get in touch</span>
-                    <span>Contact me</span>
-                    <span>I take great pleasure in collaborating with passionate and committed individuals who strive to make the world a better place. Their dedication and creativity inspire me to push my limits and achieve new heights. If you share this vision and would like to work together, please don't hesitate to reach out to me. I'm always looking for new opportunities to learn and grow.
+                    <span
+                        style={{ color: props.lightMode ? '' : 'whitesmoke' }}
+                    >Contact me</span>
+                    <span
+                        style={{ color: props.lightMode ? '' : '#e9e7c6' }}
+                    >I take great pleasure in collaborating with passionate and committed individuals who strive to make the world a better place. Their dedication and creativity inspire me to push my limits and achieve new heights. If you share this vision and would like to work together, please don't hesitate to reach out to me. I'm always looking for new opportunities to learn and grow.
                     </span>
                     <div className="blur c-blur"></div>
                 </div>
@@ -84,7 +88,11 @@ const Contact = () => {
                         Send
                     </button>
                 </form>
-                <span className='form-mess'>{done && 'Thank you. I will get back to you as soon as possible.'}</span>
+                <span className='form-mess'
+                    style={{ color: props.lightMode ? '' : 'whitesmoke' }}
+                >
+                    {done && 'Thank you. I will get back to you as soon as possible.'}
+                </span>
             </div>
         </div>
     )
