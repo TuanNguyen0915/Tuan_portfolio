@@ -8,11 +8,21 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 // css
 import './App.css'
+import { useState } from 'react'
 
 function App() {
+    const [lightMode, setLightMode] = useState(true)
+    const handleOnClick = (clicked) => {
+        setLightMode(!clicked)
+    }
     return (
-        <main className='App'>
-            <NavBar />
+        <main className='App'
+            style={{
+                background: lightMode ? '' : '#222',
+                color: lightMode ? '' : 'white'
+            }}
+        >
+            <NavBar handleOnClick={handleOnClick} lightMode={lightMode}/>
             <Intro />
             <About />
             <Project />

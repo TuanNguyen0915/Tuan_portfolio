@@ -1,11 +1,18 @@
 import './NavBar.css'
 import TuanSignature from '../../assets/images/Tuan_signature.png'
-const NavBar = () => {
+import TuanSignatureW from '../../assets/images/Tuan_signature_w.png'
+
+import Toggle from '../Toggle/Toggle'
+
+const NavBar = (props) => {
     return (
         <div className="navbar-section">
             <div className="left-nav">
-                <img src={TuanSignature} alt='TuanNG' />
-                <span>toggle</span>
+                {props.lightMode?
+                <img src={TuanSignature} alt='TuanNG' />:
+                <img src={TuanSignatureW} alt='TuanNG' />
+                }
+                <Toggle handleOnClick={props.handleOnClick}/>
             </div>
             <div className="right-nav">
                 <div className="nav-list">
