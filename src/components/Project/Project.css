@@ -11,7 +11,7 @@
 }
 
 .p-decs>:nth-child(1) {
-    color: var(--orange); 
+    color: var(--orange);
     font-weight: bold;
     font-size: 3rem;
 }
@@ -70,5 +70,39 @@
     100% {
         transform: translateX(0rem);
         opacity: 1;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .projects {
+        margin-top: 1100px;
+    }
+
+    .p-decs>:nth-child(2) {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: normal;
+        color: var(--gray);
+        text-align: justify;
+    }
+
+    .p-list {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .p-active>* {
+        min-height: 20rem;
+    }
+    .p-pc {
+        display: flex;
+        flex-direction: row;
+        max-width: 33%;
+        min-height: 5rem;
+    }
+
+    .p-pc>* {
+        text-align: center;
     }
 }

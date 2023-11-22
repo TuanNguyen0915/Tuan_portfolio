@@ -1,8 +1,7 @@
 //components
 import ProjectCard from '../ProjectCard/ProjectCard';
-import { HashLink } from 'react-router-hash-link'
+
 // icons
-import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
 //data
 import { useState } from 'react'
 import { myProjects } from '../../data/data'
@@ -24,7 +23,6 @@ const Project = (props) => {
         <div
             className="projects" id='projects'>
             <div
-                
                 className='p-decs'
             >
                 <span
@@ -60,15 +58,6 @@ const Project = (props) => {
                                 : null
                         ))}
                     </div>
-                    {/* arrows */}
-                    {/* <div className='arrow a-arrow'>
-                        <HashLink smooth to='#exp'>
-                            <FaAngleDoubleDown className='a-down' />
-                        </HashLink>
-                        <HashLink smooth to='#about'>
-                            <FaAngleDoubleUp className='a-up />' />
-                        </HashLink>
-                    </div> */}
                 </div>
             </div>
         </div>

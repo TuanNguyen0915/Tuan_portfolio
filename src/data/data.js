@@ -30,7 +30,7 @@ const myProjects = [
     },
     {
         id: 2,
-        name: 'DragonBall',
+        name: 'Dragon Ball',
         decs: 'This is DragonBall ',
         img1: './src/assets/images/dragon_ball/home.png',
         img2: './src/assets/images/dragon_ball/detail.png',
