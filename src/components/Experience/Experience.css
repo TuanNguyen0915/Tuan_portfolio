@@ -98,7 +98,7 @@
 @media screen and (max-width:480px) {
     .e-heading>:nth-child(2) {
         width: 100%;
-        font-size: 1rem;
+        font-size: .7rem;
     }
     .exp-box {
         height: 17rem;
@@ -112,4 +112,8 @@
     .exp-box>*{
         transform: scale(0.8);
     }
+    .experience .swiper-pagination-bullet-active,
+.experience .swiper-pagination-bullet {
+    transform: translateY( 0rem) scale(1.5);
+}
 }
