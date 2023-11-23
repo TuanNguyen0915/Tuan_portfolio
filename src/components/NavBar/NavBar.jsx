@@ -1,6 +1,6 @@
 import './NavBar.css'
-import TuanSignature from '/public/assets/images/Tuan_signature.png'
-import TuanSignatureW from '/public/assets/images/Tuan_signature_w.png'
+import TuanSignature from '/assets/images/Tuan_signature.png'
+import TuanSignatureW from '/assets/images/Tuan_signature_w.png'
 import { HashLink } from 'react-router-hash-link'
 import Toggle from '../Toggle/Toggle'
 
