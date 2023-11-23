@@ -1,10 +1,11 @@
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-
+import { motion } from 'framer-motion'
 
 import './Contact.css'
 
 const Contact = (props) => {
+    const transition = { duration: 3, type: 'spring' }
     const formRef = useRef()
     const [form, setForm] = useState({
         name: '',
@@ -46,7 +47,9 @@ const Contact = (props) => {
 
     return (
         <div className="contact" id='contact'>
-            <div className="c-left">
+            <motion.div
+                initial={{ x: -300, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={transition}
+                className="c-left">
                 <div className="c-decs">
                     <span>Get in touch</span>
                     <span
@@ -58,13 +61,14 @@ const Contact = (props) => {
                     </span>
                     <div className="blur c-blur"></div>
                 </div>
-            </div>
+            </motion.div>
             <div className="c-right">
-                <form
+                <motion.form
                     ref={formRef}
                     className="form-control"
                     onSubmit={handleSubmit}
                     autoComplete='off'
+                    initial={{ x: 300, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={transition}
                 >
                     <input
                         type="text" placeholder="Your Full Name"
@@ -87,7 +91,7 @@ const Contact = (props) => {
                     <button className="btn c-btn">
                         Send
                     </button>
-                </form>
+                </motion.form>
                 <span className='form-mess'
                     style={{ color: props.lightMode ? '' : 'whitesmoke' }}
                 >
