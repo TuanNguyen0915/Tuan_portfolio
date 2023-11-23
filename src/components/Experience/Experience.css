@@ -114,6 +114,6 @@
     }
     .experience .swiper-pagination-bullet-active,
 .experience .swiper-pagination-bullet {
-    transform: translateY( -8rem) scale(1.5);
+    transform: translateY( -10rem) scale(1.5);
 }
 }
