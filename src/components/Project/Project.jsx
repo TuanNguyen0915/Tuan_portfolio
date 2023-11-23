@@ -8,7 +8,7 @@ import './Project.css'
 
 const Project = (props) => {
     const transition = { duration: 2, type: 'spring' }
-    const cardTransition = { duration: 2, type: 'spring' }
+    const cardTransition = { duration: 4, type: 'spring' }
     const [currId, setCurrId] = useState(1)
     const handleClick = idx => {
         myProjects.map(project => {

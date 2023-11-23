@@ -18,8 +18,8 @@ import { skillsSet } from '../../data/data'
 
 
 const About = (props) => {
-    const transition = { duration: 4, type: 'spring' }
-    const cardTransition = { duration: 8, type: 'spring' }
+    const transition = { duration: 2, type: 'spring' }
+    const cardTransition = { duration: 4, type: 'spring' }
 
     return (
         <div
