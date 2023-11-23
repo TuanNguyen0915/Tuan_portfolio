@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import './Contact.css'
 
 const Contact = (props) => {
-    const transition = { duration: 3, type: 'spring' }
+    const transition = { duration: 1, type: 'spring' }
     const formRef = useRef()
     const [form, setForm] = useState({
         name: '',

@@ -11,7 +11,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 
 const Experience = (props) => {
-    const transition = { duration: 4, type: 'spring' }
+    const transition = { duration: 1, type: 'spring' }
     return (
         <div className="experience" id='exp'>
             <motion.div
