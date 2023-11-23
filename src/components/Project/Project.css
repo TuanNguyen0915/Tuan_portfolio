@@ -73,6 +73,23 @@
     }
 }
 
+@keyframes slider_down {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(2rem);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width:480px) {
     .projects {
         margin-top: 1100px;
@@ -90,9 +107,11 @@
         display: flex;
         flex-direction: column;
     }
+
     .p-active>* {
         min-height: 20rem;
     }
+
     .p-pc {
         display: flex;
         flex-direction: row;
@@ -102,5 +121,11 @@
 
     .p-pc>* {
         text-align: center;
+    }
+
+    .p-pc>*:hover {
+        cursor: pointer;
+        animation: slider_down .75s .2s ease infinite;
+        filter: blur(0px);
     }
 }
